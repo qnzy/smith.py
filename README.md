@@ -1,4 +1,4 @@
-smith.py, a simple minimalistic Smith chart plotter for python.
+smith.py, a simple minimalistic Smith Chart plotter for Python.
 
 Usage:
 
