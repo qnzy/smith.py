@@ -1,5 +1,5 @@
 """
-smith.py, a simple minimalistic Smith chart plotter.
+smith.py, a simple minimalistic Smith Chart plotter.
 See the end of this file for example usage.
 
 pubilc domain / CC0
@@ -10,7 +10,7 @@ import matplotlib.pyplot as pp
 
 class smith:
     """
-    Simple Smith-Chart drawing.
+    Simple Smith Chart drawing.
     """
 
     def __init__(self, Z0=50):
@@ -75,7 +75,7 @@ class smith:
  
     def drawGrid(self):
         """
-        Draws the Smith chart grid.
+        Draws the Smith Chart grid.
         """
         self.drawXCircle(0)
         self.drawXCircle(self.Z0/5)
