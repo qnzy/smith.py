@@ -16,6 +16,7 @@ class smith:
     def __init__(self, Z0=50):
         """
         Creates the figure and draws the grid.
+        Z0: characteristic impedance
         """
         pp.ioff()
         self.Z0=Z0
