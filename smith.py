@@ -65,13 +65,15 @@ class smith:
         zlst = [complex(0, y)]+[complex(z, y) for z in np.logspace(0, 6, npts)]
         self.drawZList(zlst, 'k')
 
-    def markZ(self, z, size=1):
+    def markZ(self, z, text=None, c='b', size=1):
         """
         Marks an impedance with a dot.
         """
         pp.figure(self.fig.number)
         g = self.z2gamma(z)
-        pp.plot(g.real, g.imag, 'ob')
+        pp.plot(g.real, g.imag, 'o'+c)
+        if text:
+            pp.text(g.real+0.02, g.imag+0.02, text, color=c, weight='demi')
         pp.draw()
  
     def drawGrid(self):
@@ -106,7 +108,7 @@ class smith:
 if __name__ == '__main__':
     smith = smith()
     smith.markZ(20+30j)
-    smith.markZ(130-60j)
+    smith.markZ(130-60j, text='Z1', c='r')
     smith.drawZList([0, 50j, 10000j, -50j, 0])
     smith.show()
     raw_input()
