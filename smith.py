@@ -2,7 +2,7 @@
 smith.py, a simple minimalistic Smith Chart plotter.
 See the end of this file for example usage.
 
-pubilc domain / CC0
+public domain / CC0
 """
 
 import numpy as np
