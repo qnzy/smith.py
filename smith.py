@@ -63,7 +63,7 @@ class smith:
         Draws a circle with constant imaginary part.
         """
         zlst = [complex(0, y)]+[complex(z, y) for z in np.logspace(0, 6, npts)]
-        self.drawZList(zlst,'k')
+        self.drawZList(zlst, 'k')
 
     def markZ(self, z, size=1):
         """
