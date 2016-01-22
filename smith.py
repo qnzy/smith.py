@@ -29,7 +29,8 @@ class smith:
         Shows the plot. The plot can't be updated after it has been
         closed.
         """
-        self.fig.show()
+        pp.figure(self.fig.number)
+        pp.show()
 
     def save(self, filename):
         """
@@ -111,5 +112,3 @@ if __name__ == '__main__':
     smith.markZ(130-60j, text='Z1', c='r')
     smith.drawZList([0, 50j, 10000j, -50j, 0])
     smith.show()
-    raw_input()
-    
